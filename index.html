@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>全国疫情数据一览平台</title>
+  <script>
+    const clientWidth = document.documentElement.clientWidth
+    const clientHeight = document.documentElement.clientHeight
+    const pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth
+    const pageHeight = pageWidth / (16 / 9)
+    const string = `<style>html{
+      font-size: ${pageWidth / 100}px
+    }</style>`
+    document.write(string)
+  </script>
+  <script src="//at.alicdn.com/t/font_2634668_z0q3bve4hdc.js"></script>
+  <style>
+    .smallIcon {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .smallIcon.visible {
+      display: block;
+      animation: fadeIn 1000ms;
+    }
+
+    .smallIcon.visible .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(0%);
+      }
+
+      60% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(-80%);
+      }
+    }
+  </style>
+<script type="module" crossorigin src="/Epidemic-bigScreen-Website/assets/index.4ada3ae7.js"></script>
+  <link rel="modulepreload" href="/Epidemic-bigScreen-Website/assets/vendor.95f44e24.js">
+  <link rel="stylesheet" href="/Epidemic-bigScreen-Website/assets/index.c8dcb261.css">
+</head>
+
+<body>
+  <div id="root">
+    <script>
+      root.style.width = pageWidth + 'px'
+      root.style.height = pageHeight + 'px'
+      root.style.marginTop = (clientHeight - pageHeight) / 2 + 'px'
+    </script>
+  </div>
+  
+</body>
+
+</html>
